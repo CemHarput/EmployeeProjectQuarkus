@@ -46,7 +46,7 @@ You can create a native executable using:
 Or, if you don't have GraalVM installed, you can run the native executable build in a container using:
 
 ```shell script
-./mvnw package -Dnative -Dquarkus.native.container-build=true
+ ./mvnw clean  package -Pnative --define quarkus.native.container-build=true  
 ```
 
 You can then execute your native executable with: `./target/employeeproject-1.0.0-SNAPSHOT-runner`
